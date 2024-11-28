@@ -1,0 +1,37 @@
+// import Template from "./lib/template.js";
+// import App from "./components/app.js";
+// import wdnmd from "./components/wdnmd.js";
+// import temp1 from "./components/temp1.js";
+
+// new Template.builder("#app").mount(App).components([wdnmd, temp1, {
+//   mountPoint: ".aaa",
+//   template: `<div>aaa</div>`
+// }]);
+
+import { observer, subject } from "./observer.js";
+import { ref } from "./lib/utils.js";
+
+const foo = ref(1)
+
+console.log(foo);
+
+// const root = document.querySelector("#app");
+// const element = document.createElement("div");
+
+// const sub1 = new subject({
+//   name: "sub1",
+//   data: {
+//     msg: "Hello",
+//   },
+// });
+
+// const ob1 = new observer("sub1", function(data) {
+//   element.innerHTML = data.msg
+//   console.log(data.msg);
+// });
+// element.innerHTML = sub1.data.msg;
+
+// root.append(element);
+
+
+// [window.sub1, window.ob1] = [sub1, ob1];
