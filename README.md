@@ -29,7 +29,7 @@ function autorun(update) {
   warppedUpdate()
 }
 ```
-通过 `warppedUpdate` 方法的封装 其实就形成了 一种视频里称之为 reative zone 的空间 在这个堆栈(update function)里 也只能在这里才能订阅依赖 只有在这个堆栈里activeUpdate才是存在的
+通过 `warppedUpdate` 方法的封装 其实就形成了 一种称之为 reative zone 的空间 在这个堆栈(update function)里 也只能在这里才能订阅依赖 只有在这个堆栈里activeUpdate才是存在的
 
 ***
 
